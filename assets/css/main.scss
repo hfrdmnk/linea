@@ -19,6 +19,12 @@ body {
   animation: gradient 10s ease-in-out;
 }
 
+.logo, 
+.project .icon {
+  background: rgb(247,250,252);
+  background: linear-gradient(0deg, rgba(247,250,252,1) 0%, rgba(255,255,255,1) 100%);
+}
+
 @keyframes gradient {
   0% {
     transform: rotate(0deg) scale(1);
@@ -36,7 +42,13 @@ body {
 }
 
 .project {
-  @apply sm:col-span-4 sm:mb-0 mb-24 col-span-full bg-white shadow-normal text-center p-8 relative rounded-half-max;
+  @apply sm:col-span-4 sm:mb-0 mb-24 col-span-full bg-white shadow-normal text-center p-8 relative rounded-half-max cursor-pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    @apply shadow-elevated;
+    transform: translateY(-0.5rem);
+  }
 
   .icon {
     @apply flex justify-center items-center sm:w-32 sm:h-32 w-20 h-20 absolute bg-white shadow-normal sm:rounded-half-max rounded-2xl;
@@ -58,6 +70,11 @@ body {
 
   .cta {
     @apply text-gray-500 sm:text-base text-sm;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      @apply text-gray-700;
+    }
   }
 
   &:last-child {
