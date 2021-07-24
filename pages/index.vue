@@ -13,7 +13,7 @@
           <button type="submit" class="sm:col-span-2 bg-black text-white rounded-lg shadow-normal p-4 col-span-4 col-start-3">keep me posted!</button>
         </form>
       </header>
-      <main class="sm:py-48 pt-36 pb-32">
+      <main class="sm:pt-48 sm:pb-40 pt-36 pb-32">
         <div class="grid gap-4 grid-cols-8">
           <div class="project" v-for="project in projects" :key="project.logo">
             <div class="icon">
