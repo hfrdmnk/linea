@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <img :src="require(`~/assets/img/gradients/gradient${randomImg}.png`)" class="gradientbg">
+    <img :src="require(`~/assets/img/gradients/gradient2.png`)" class="gradientbg">
     <div class="wrapper">
       <header class="sm:pt-36 pt-24">
         <div class="logo sm:h-44 sm:w-44 h-24 w-24 bg-white shadow-elevated sm:rounded-max rounded-3xl flex justify-center items-center">
@@ -8,12 +8,12 @@
         </div>
         <h1 class="sm:mt-20 mt-12 font-bold sm:text-5xl text-3xl text-gray-500 leading">linea shapes <span class="text-black">minimalist apps</span> and other <span class="text-black">creative projects</span>.</h1>
         <form action="https://buttondown.email/api/emails/embed-subscribe/dominikhofer" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/dominikhofer', 'popupwindow')" class="sm:mt-20 mt-12 grid gap-4 grid-cols-8">
-          <input type="email" placeholder="your email" name="email" id="bd-email" class="sm:col-span-4 col-span-6 sm:col-start-2 col-start-2 inputfield">
+          <input type="email" placeholder="your email" name="email" id="bd-email" class="sm:col-span-4 col-span-full sm:col-start-2 inputfield">
           <input type="hidden" value="1" name="embed" />
           <button type="submit" class="sm:col-span-2 bg-black text-white rounded-lg shadow-normal p-4 col-span-4 col-start-3">keep me posted!</button>
         </form>
       </header>
-      <main class="sm:py-48 pt-44">
+      <main class="sm:py-48 pt-36 pb-32">
         <div class="grid gap-4 grid-cols-8">
           <div class="project" v-for="project in projects" :key="project.logo">
             <div class="icon">

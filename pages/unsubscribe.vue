@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <img :src="require(`~/assets/img/gradients/gradient${randomImg}.png`)" class="gradientbg">
+    <img :src="require(`~/assets/img/gradients/gradient2.png`)" class="gradientbg">
     <div class="wrapper">
       <header class="sm:pt-36 pt-24 mb-12">
         <div class="logo sm:h-44 sm:w-44 h-24 w-24 bg-white shadow-elevated sm:rounded-max rounded-3xl flex justify-center items-center">
