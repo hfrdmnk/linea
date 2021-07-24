@@ -1,3 +1,62 @@
 body {
   @apply bg-white font-brand;
 }
+
+.wrapper {
+  @apply mx-auto px-4;
+  max-width: 75ch;
+}
+
+.gradientbg {
+  @apply fixed;
+  min-width: 40rem;
+  width: 50vw;
+  filter: blur(128px);
+  opacity: 0.7;
+  z-index: -10;
+  margin-top: -20vh;
+  margin-left: -10vw;
+  animation: gradient 10s ease-in-out;
+}
+
+@keyframes gradient {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+.inputfield {
+  @apply bg-white p-4 rounded-lg text-gray-500 shadow-normal text-lg;
+}
+
+.project {
+  @apply sm:col-span-4 sm:mb-0 mb-24 col-span-6 col-start-2 bg-white shadow-normal text-center p-8 relative rounded-half-max;
+
+  .icon {
+    @apply flex justify-center items-center sm:w-32 sm:h-32 w-20 h-20 absolute bg-white shadow-normal sm:rounded-half-max rounded-2xl;
+    left: 50%;
+    transform: translate(-50%, -6rem);
+
+    img {
+      @apply sm:w-16 w-10;
+    }
+  }
+
+  .title {
+    @apply font-bold sm:text-3xl mb-2 sm:mt-16 mt-4 text-2xl;
+  }
+
+  .desc {
+    @apply sm:text-lg sm:mb-6 mb-2;
+  }
+
+  .cta {
+    @apply text-gray-500 sm:text-base text-sm;
+  }
+}
