@@ -9,7 +9,7 @@ body {
 
 .gradientbg {
   @apply fixed;
-  min-width: 40rem;
+  min-width: 32rem;
   width: 50vw;
   filter: blur(128px);
   opacity: 0.7;
@@ -62,5 +62,12 @@ body {
 
   &:last-child {
     @apply mb-0;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .gradientbg {
+    margin-top: -40vh;
+    margin-left: -20vh;
   }
 }
