@@ -6,11 +6,11 @@
         <div class="logo sm:h-44 sm:w-44 h-24 w-24 bg-white shadow-elevated sm:rounded-max rounded-3xl flex justify-center items-center">
           <img src="~/assets/img/logos/logo_linea.svg" alt="logo linea" class="block sm:w-24 w-12">
         </div>
-        <h1 class="sm:mt-20 mt-12 font-bold sm:text-5xl text-3xl text-gray-500 leading">linea shapes <span class="text-black">minimalist apps</span> and other <span class="text-black">creative projects</span>.</h1>
+        <h1 class="sm:mt-20 mt-12 font-bold sm:text-5xl text-3xl text-black leading">linea shapes <span class="text-black">minimalist apps</span> and other <span class="text-black">creative projects</span>.</h1>
         <form action="https://buttondown.email/api/emails/embed-subscribe/dominikhofer" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/dominikhofer', 'popupwindow')" class="sm:mt-20 mt-12 grid gap-4 grid-cols-8">
-          <input type="email" placeholder="your email" name="email" id="bd-email" class="sm:col-span-4 col-span-full sm:col-start-2 inputfield">
+          <input type="email" placeholder="your email" name="email" id="bd-email" class="sm:col-span-5 col-span-full inputfield">
           <input type="hidden" value="1" name="embed" />
-          <button type="submit" class="sm:col-span-2 bg-black text-white rounded-lg shadow-normal p-4 col-span-4 col-start-3">keep me posted!</button>
+          <button type="submit" class="sm:col-span-3 bg-black text-white rounded-lg shadow-normal p-4 col-span-4 col-start-3">keep me up to date!</button>
         </form>
       </header>
       <main class="sm:pt-56 sm:pb-40 pt-36 pb-28">

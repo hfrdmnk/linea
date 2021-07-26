@@ -38,7 +38,22 @@ body {
 }
 
 .inputfield {
-  @apply bg-white p-4 rounded-lg text-gray-500 shadow-normal text-lg;
+  @apply bg-white p-4 rounded-lg text-gray-500 shadow-normal text-lg outline-none;
+  transition: all 0.3s ease-in-out;
+
+  &:focus {
+    @apply shadow-elevated;
+    transform: translateY(-0.3rem);
+  }
+}
+
+button[type="submit"] {
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+  @apply shadow-elevated;
+  transform: translateY(-0.3rem);
+  }
 }
 
 .project {
@@ -47,7 +62,7 @@ body {
 
   &:hover {
     @apply shadow-elevated;
-    transform: translateY(-0.5rem);
+    transform: translateY(-0.3rem);
   }
 
   .icon {
